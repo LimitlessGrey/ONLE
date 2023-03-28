@@ -32,8 +32,6 @@ optimal_fuel_consumption_results = []
 # Perform sensitivity analysis for each acceleration value
 for a_test in a_test_values:
 
-    # Solve for a
-
     result = minimize(
         objective_function,
         x0=np.zeros(N),
