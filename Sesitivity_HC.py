@@ -31,10 +31,9 @@ optimal_fuel_consumption_results = []
 
 # Perform sensitivity analysis for each acceleration value
 for a_test in a_test_values:
-    # Update the constraints with the test acceleration value
-    # ...
 
-    # Solve the optimization problem
+    # Solve for a
+
     result = minimize(
         objective_function,
         x0=np.zeros(N),
@@ -49,7 +48,7 @@ for a_test in a_test_values:
     else:
         optimal_fuel_consumption_results.append(None)
 
-# Analyze the results Plot the 
+# Plot the results
 
 plt.plot(a_test_values, optimal_fuel_consumption_results)
 plt.xlabel('Acceleration')
