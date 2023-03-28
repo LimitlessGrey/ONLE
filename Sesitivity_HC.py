@@ -4,13 +4,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 
-# Define the objective function (adapt to your specific problem)
+# Define the objective function
 def objective_function(a, *params):
     # Calculate the fuel consumption based on the acceleration
     # fuel consumption (a)
     return fuel_consumption
 
-# Define the constraints (adapt to your specific problem)
+# Define the constraints 
 constraints = (
     # Velocity constraint (Max Vel = 120kmh)
     Vmax = 120,
