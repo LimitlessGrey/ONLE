@@ -1,0 +1,3 @@
+Iteration 100: Best Cost = 24.8114
+Temperature 0.10103
+Best solution: x = 0.36337     0.39878     0.53962      0.2767     0.35296     0.20663, cost = 24.8114

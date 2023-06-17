@@ -1,0 +1,25 @@
+Iteration 100: Best Cost = 9.9702
+Temperature 0.010046
+Best solution: x = 0.0007401  1.9894e-06  0.00071799  0.00035459  5.8585e-06  1.9894e-06  0.00052071  0.00051465  0.00052424  1.9894e-06, cost = 9.9702
+
+Stresses
+
+273572894.151574
+178280362.997194
+-275121516.804458
+-268609015.815568
+8205571.95478883
+175098656.110644
+273514010.485956
+-272889215.202263
+276475286.487717
+-232193358.063438
+
+
+Parameters
+
+temperature = 30;  % initial temperature
+targetTemperature = 0.01;  % final temperature
+coolingRate = 0.95;  % cooling rate
+maxIterations = 100;  % maximum number of iterations
+ 

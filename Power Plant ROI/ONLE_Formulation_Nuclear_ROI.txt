@@ -1,0 +1,44 @@
+Objective Function: Minimize ROI(h) subjected to the constraints.
+
+Where:
+
+    ROI(h) = Total Investment / Total Profit
+    Total Investment = C_material + C_construction
+    Total Profit = Annual Revenue - Annual Operational Cost
+
+Subject to the constraints:
+
+    Geometry of the Cooling Tower:
+
+    D1 (diameter at the bottom) = 50 + 0.5 * h
+    D2 (diameter at the top) = 30 + 0.25 * h
+    A (surface area of the tower) = π * (D1 + D2) * sqrt((D1 - D2)^2 / 4 + h^2)
+
+    Cost of Materials and Construction:
+
+    C_material (cost of materials) = k_material * A
+    C_construction (cost of construction) = k_construction * h
+
+    Temperature at height h:
+
+    T_air_h (ambient temperature at the height h) = T_ambient + h² * gradient_air
+
+    Heat Transfer Coefficient:
+
+    hc = a * v + b
+
+    Actual Heat Transfer:
+
+    Q_actual = hc * A * (T_water - T_air_h)
+
+    Annual Revenue:
+
+    revenue_per_year = Q_actual * cost_per_MW
+
+    Annual Operational Cost:
+
+    C_operation_per_year = Some predefined value or function
+
+    Total Profit:
+
+    total_profit_per_year = revenue_per_year - C_operation_per_year
